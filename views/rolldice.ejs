@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RollDice Random number</title>
-</head>
+<%- include("includes/head.ejs") %>
 <body>
 
     <!-- passing Data from DataBase to EJS -->
@@ -15,14 +9,11 @@
     <% if(num == 6) { %>
         <h2>Nice! Roll dice again.</h2>
     <% } %>
+
+
+    <%- include("includes/footer.ejs") %>
 </body>
 </html>
 
 
-  <!-- <h3>Accounts that follow you : </h3>
-    <ul>
-        <% for( let name of followers){ %>
-        <li> <%= name %> </li>
-        <% } %>
-    </ul>
-     -->
+ 

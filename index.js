@@ -5,6 +5,9 @@ const path = require("path");
 app.set("viwes", path.join(__dirname, "/views"));
 
 app.set("view engine", "ejs");
+
+
+// creating Serving Static Files
 // app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, "/public/JS")));
 app.use(express.static(path.join(__dirname, "/public/CSS")))
